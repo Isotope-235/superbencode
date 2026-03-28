@@ -1,0 +1,7 @@
+imports_granularity = "Crate"
+group_imports = "StdExternalCrate"
+reorder_impl_items = true
+use_field_init_shorthand = true
+struct_field_align_threshold = 20
+overflow_delimited_expr = true
+trailing_comma = "Never"

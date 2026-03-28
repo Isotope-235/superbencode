@@ -1,0 +1,22 @@
+[package]
+name = "superbencode"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.94"
+
+categories = ["parser-implementations", "encoding"]
+keywords = ["bencode", "bencoding"]
+
+[dev-dependencies]
+criterion = { version = "0.8", features = ["html_reports"] }
+
+[lints.clippy]
+pedantic = "warn"
+
+[[bench]]
+name = "file"
+harness = false
+
+[[bench]]
+name = "encode"
+harness = false
