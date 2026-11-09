@@ -16,7 +16,6 @@ impl<'buf> Index<&[u8]> for Value<'buf> {
 
     fn index(&self, index: &[u8]) -> &Self::Output {
         if let Value::Dict(map) = self {
-            dbg!();
             &map[index]
         } else {
             panic!("indexing with dictionary key into non-dictionary value")

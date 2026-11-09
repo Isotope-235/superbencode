@@ -8,7 +8,9 @@ categories = ["parser-implementations", "encoding"]
 keywords = ["bencode", "bencoding"]
 
 [dev-dependencies]
+bendy = "0.6.1"
 criterion = { version = "0.8", features = ["html_reports"] }
+serde_bencode = "0.2.4"
 
 [lints.clippy]
 pedantic = "warn"
@@ -19,4 +21,8 @@ harness = false
 
 [[bench]]
 name = "encode"
+harness = false
+
+[[bench]]
+name = "compare"
 harness = false
